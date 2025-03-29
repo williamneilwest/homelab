@@ -1,0 +1,20 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/services/
+
+- Server Stuff:
+    - Plex Media Server for Media Organziation:
+        href: http://plex.pridebytes.io
+        description: Videos, show, etc.  # Update to your Samba URL
+        icon: "fas fa-server"  # Icon for Samba service
+        authentication: "basic"
+
+- Samba:
+    - Authenticated Samba Service:
+        href: http://smb.pridebytes.io
+        description: Securely manipulate server files
+
+- Website:
+    - My Own Personal Portfolio Website:
+        href: http://localhost/
+        description: A portfolio page built with React + Vite

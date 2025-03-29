@@ -1,0 +1,157 @@
+Mar 28, 2025 19:40:20.976 [140404171041536] INFO - Plex Media Scanner v1.41.5.9522-a96edc606 - Docker Docker Container x86_64 - build: linux-x86_64 - GMT -06:00
+Mar 28, 2025 19:40:20.976 [140404171041536] INFO - Linux version: 6.1.0-32-amd64, language: en-US
+Mar 28, 2025 19:40:20.977 [140404171041536] INFO - Processor: 12-core AMD Ryzen 5 4600G with Radeon Graphics
+Mar 28, 2025 19:40:20.977 [140404171041536] INFO - /usr/lib/plexmediaserver/Plex Media Scanner --analyze --log-file-suffix  Analysis --item 2
+Mar 28, 2025 19:40:20.976 [140404171542272] DEBUG - Opening 20 database sessions to library (com.plexapp.plugins.library), SQLite 3.39.4, threadsafe=1
+Mar 28, 2025 19:40:21.042 [140404171542272] DEBUG - Analyzing media parts for item 2 (14035 254146872 Tiny): 2
+Mar 28, 2025 19:40:21.042 [140404171542272] DEBUG - [ID 2] Media part analysis: /media/Movies/14035-254146872_tiny.mp4
+Mar 28, 2025 19:40:21.042 [140404171542272] DEBUG - [MI] Opening input file: "/media/Movies/14035-254146872_tiny.mp4"
+Mar 28, 2025 19:40:21.043 [140404171542272] DEBUG - [FFMPEG] - Opening '/media/Movies/14035-254146872_tiny.mp4' for reading
+Mar 28, 2025 19:40:21.043 [140404171542272] DEBUG - [FFMPEG] - Setting default whitelist 'file,crypto,data'
+Mar 28, 2025 19:40:21.043 [140404171542272] DEBUG - [FFMPEG] - Format mov,mp4,m4a,3gp,3g2,mj2 probed with size=2048 and score=100
+Mar 28, 2025 19:40:21.043 [140404171542272] DEBUG - [FFMPEG] - ISO: File Type Major Brand: mp42
+Mar 28, 2025 19:40:21.043 [140404171542272] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Mar 28, 2025 19:40:21.043 [140404171542272] DEBUG - [FFMPEG] - Processing st: 0, edit list 0 - media time: 2002, duration: 213200
+Mar 28, 2025 19:40:21.043 [140404171542272] DEBUG - [FFMPEG] - Offset DTS by 2002 to make first pts zero.
+Mar 28, 2025 19:40:21.043 [140404171542272] DEBUG - [FFMPEG] - Setting codecpar->delay to 2 for stream st: 0
+Mar 28, 2025 19:40:21.043 [140404171542272] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Mar 28, 2025 19:40:21.043 [140404171542272] DEBUG - [FFMPEG] - Processing st: 1, edit list 0 - media time: 0, duration: 343040
+Mar 28, 2025 19:40:21.043 [140404171542272] DEBUG - [FFMPEG] - Before avformat_find_stream_info() pos: 5443 bytes read:32768 seeks:0 nb_streams:2
+Mar 28, 2025 19:40:21.044 [140404171542272] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Mar 28, 2025 19:40:21.044 [140404171542272] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Mar 28, 2025 19:40:21.044 [140404171542272] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Mar 28, 2025 19:40:21.044 [140404171542272] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Mar 28, 2025 19:40:21.044 [140404171542272] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Mar 28, 2025 19:40:21.044 [140404171542272] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 3
+Mar 28, 2025 19:40:21.044 [140404171542272] DEBUG - [FFMPEG] - Format yuv420p chosen by get_format().
+Mar 28, 2025 19:40:21.044 [140404171542272] DEBUG - [FFMPEG] - no picture 
+Mar 28, 2025 19:40:21.048 [140404171542272] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Mar 28, 2025 19:40:21.048 [140404171542272] DEBUG - [FFMPEG] - no picture 
+Mar 28, 2025 19:40:21.048 [140404171542272] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Mar 28, 2025 19:40:21.049 [140404171542272] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Mar 28, 2025 19:40:21.049 [140404171542272] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Mar 28, 2025 19:40:21.050 [140404171542272] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Mar 28, 2025 19:40:21.050 [140404171542272] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Mar 28, 2025 19:40:21.050 [140404171542272] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Mar 28, 2025 19:40:21.050 [140404171542272] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Mar 28, 2025 19:40:21.051 [140404171542272] DEBUG - [FFMPEG] - All info found
+Mar 28, 2025 19:40:21.051 [140404171542272] DEBUG - [FFMPEG] - After avformat_find_stream_info() pos: 59103 bytes read:65536 seeks:0 frames:16
+Mar 28, 2025 19:40:21.051 [140404171542272] DEBUG - [MI] Opening "/media/Movies/14035-254146872_tiny.mp4" for MP4 atom parsing
+Mar 28, 2025 19:40:21.051 [140404171542272] DEBUG - Mp4AtomParser: Skipping ftyp atom of size 32 at offset 0
+Mar 28, 2025 19:40:21.051 [140404171542272] DEBUG - Mp4AtomParser: Found moov atom of size 5403 at offset 32
+Mar 28, 2025 19:40:21.051 [140404171542272] DEBUG - Mp4AtomParser: Found trak atom of size 3348 at offset 190
+Mar 28, 2025 19:40:21.051 [140404171542272] DEBUG - Mp4AtomParser: Found trak atom of size 1897 at offset 3538
+Mar 28, 2025 19:40:21.051 [140404171542272] DEBUG - Mp4AtomParser: Found mdia atom of size 3212 at offset 326
+Mar 28, 2025 19:40:21.051 [140404171542272] DEBUG - Mp4AtomParser: Found minf atom of size 3118 at offset 420
+Mar 28, 2025 19:40:21.051 [140404171542272] DEBUG - Mp4AtomParser: Found stbl atom of size 3054 at offset 484
+Mar 28, 2025 19:40:21.051 [140404171542272] DEBUG - Mp4AtomParser: Found mdia atom of size 1761 at offset 3674
+Mar 28, 2025 19:40:21.051 [140404171542272] DEBUG - Mp4AtomParser: Found minf atom of size 1667 at offset 3768
+Mar 28, 2025 19:40:21.051 [140404171542272] DEBUG - Mp4AtomParser: Found stbl atom of size 1607 at offset 3828
+Mar 28, 2025 19:40:21.051 [140404171542272] DEBUG - [MI]  * 319244d80898c853e8b5d49e3e3534981fe3c03e [mp4 h264/aac] Duration: 7147ms, 640x360 (1.777778) 29.970fps, bitrate=590kbps, audio channels=2, optimizedForStreaming=1 ("/media/Movies/14035-254146872_tiny.mp4")
+Mar 28, 2025 19:40:21.051 [140404171542272] DEBUG - [MI] Chapters had generic titles, clearing.
+Mar 28, 2025 19:40:21.052 [140404171542272] DEBUG - [MI] Closing input file: "/media/Movies/14035-254146872_tiny.mp4"
+Mar 28, 2025 19:40:21.052 [140404171542272] DEBUG - Committing media stream changes for part 2
+Mar 28, 2025 19:40:21.052 [140404171542272] DEBUG - Updating media item 2, size=527698, metadata_item_id=2
+Mar 28, 2025 19:40:21.052 [140404171542272] DEBUG - Updating part with ID=2 [/media/Movies/14035-254146872_tiny.mp4]
+Mar 28, 2025 19:40:21.053 [140404171542272] DEBUG - [MI] Opening input file: "/media/Movies/14035-254146872_tiny.mp4"
+Mar 28, 2025 19:40:21.053 [140404171542272] DEBUG - [FFMPEG] - Opening '/media/Movies/14035-254146872_tiny.mp4' for reading
+Mar 28, 2025 19:40:21.053 [140404171542272] DEBUG - [FFMPEG] - Setting default whitelist 'file,crypto,data'
+Mar 28, 2025 19:40:21.053 [140404159740672] DEBUG - [HCl#1] HTTP requesting GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=1&metadataItemID=2&metadataType=1&state=-1&parentID=-1&rootID=-1&mediaState=analyzing
+Mar 28, 2025 19:40:21.053 [140404171542272] DEBUG - [FFMPEG] - Format mov,mp4,m4a,3gp,3g2,mj2 probed with size=2048 and score=100
+Mar 28, 2025 19:40:21.053 [140404171542272] DEBUG - [FFMPEG] - ISO: File Type Major Brand: mp42
+Mar 28, 2025 19:40:21.053 [140404171542272] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Mar 28, 2025 19:40:21.053 [140404171542272] DEBUG - [FFMPEG] - Processing st: 0, edit list 0 - media time: 2002, duration: 213200
+Mar 28, 2025 19:40:21.053 [140404171542272] DEBUG - [FFMPEG] - Offset DTS by 2002 to make first pts zero.
+Mar 28, 2025 19:40:21.053 [140404171542272] DEBUG - [FFMPEG] - Setting codecpar->delay to 2 for stream st: 0
+Mar 28, 2025 19:40:21.053 [140404171542272] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Mar 28, 2025 19:40:21.053 [140404171542272] DEBUG - [FFMPEG] - Processing st: 1, edit list 0 - media time: 0, duration: 343040
+Mar 28, 2025 19:40:21.053 [140404171542272] DEBUG - [FFMPEG] - Before avformat_find_stream_info() pos: 5443 bytes read:32768 seeks:0 nb_streams:2
+Mar 28, 2025 19:40:21.054 [140404171542272] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Mar 28, 2025 19:40:21.054 [140404171542272] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Mar 28, 2025 19:40:21.054 [140404159326976] DEBUG - [HttpClient/HCl#1] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=1&metadataItemID=2&metadataType=1&state=-1&parentID=-1&rootID=-1&mediaState=analyzing
+Mar 28, 2025 19:40:21.054 [140404171542272] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Mar 28, 2025 19:40:21.054 [140404171542272] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Mar 28, 2025 19:40:21.054 [140404159740672] DEBUG - [HCl#2] HTTP requesting GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=1&metadataItemID=2&metadataType=1&state=-1&parentID=-1&rootID=-1&mediaState=thumbnailing
+Mar 28, 2025 19:40:21.054 [140404171542272] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Mar 28, 2025 19:40:21.054 [140404171542272] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 3
+Mar 28, 2025 19:40:21.054 [140404171542272] DEBUG - [FFMPEG] - Format yuv420p chosen by get_format().
+Mar 28, 2025 19:40:21.055 [140404171542272] DEBUG - [FFMPEG] - no picture 
+Mar 28, 2025 19:40:21.055 [140404159326976] DEBUG - [HttpClient/HCl#2] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=1&metadataItemID=2&metadataType=1&state=-1&parentID=-1&rootID=-1&mediaState=thumbnailing (reused)
+Mar 28, 2025 19:40:21.058 [140404171542272] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Mar 28, 2025 19:40:21.059 [140404171542272] DEBUG - [FFMPEG] - no picture 
+Mar 28, 2025 19:40:21.059 [140404171542272] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Mar 28, 2025 19:40:21.059 [140404171542272] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Mar 28, 2025 19:40:21.059 [140404171542272] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Mar 28, 2025 19:40:21.060 [140404171542272] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Mar 28, 2025 19:40:21.060 [140404171542272] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Mar 28, 2025 19:40:21.060 [140404171542272] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Mar 28, 2025 19:40:21.061 [140404171542272] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Mar 28, 2025 19:40:21.061 [140404171542272] DEBUG - [FFMPEG] - All info found
+Mar 28, 2025 19:40:21.062 [140404171542272] DEBUG - [FFMPEG] - After avformat_find_stream_info() pos: 59103 bytes read:65536 seeks:0 frames:16
+Mar 28, 2025 19:40:21.062 [140404171542272] DEBUG - Creating /config/Library/Application Support/Plex Media Server/Media/localhost/3/19244d80898c853e8b5d49e3e3534981fe3c03e.bundle/Contents/Thumbnails/thumb1.jpg (50.0%, 720x512).
+Mar 28, 2025 19:40:21.062 [140404171542272] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Mar 28, 2025 19:40:21.062 [140404171542272] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Mar 28, 2025 19:40:21.062 [140404171542272] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Mar 28, 2025 19:40:21.062 [140404171542272] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Mar 28, 2025 19:40:21.062 [140404171542272] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 3
+Mar 28, 2025 19:40:21.062 [140404171542272] DEBUG - [FFMPEG] - Format yuv420p chosen by get_format().
+Mar 28, 2025 19:40:21.063 [140404171542272] DEBUG - [FFMPEG] - no picture 
+Mar 28, 2025 19:40:21.067 [140404171542272] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Mar 28, 2025 19:40:21.067 [140404171542272] DEBUG - [FFMPEG] - no picture 
+Mar 28, 2025 19:40:21.067 [140404171542272] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Mar 28, 2025 19:40:21.076 [140404171542272] DEBUG - Loaded memory image of size 640x360.
+Mar 28, 2025 19:40:21.081 [140404171542272] DEBUG - [MI] Closing input file: "/media/Movies/14035-254146872_tiny.mp4"
+Mar 28, 2025 19:40:21.081 [140404171542272] DEBUG - [MI] Opening input file: "/media/Movies/14035-254146872_tiny.mp4"
+Mar 28, 2025 19:40:21.082 [140404171542272] DEBUG - [FFMPEG] - Opening '/media/Movies/14035-254146872_tiny.mp4' for reading
+Mar 28, 2025 19:40:21.082 [140404171542272] DEBUG - [FFMPEG] - Setting default whitelist 'file,crypto,data'
+Mar 28, 2025 19:40:21.082 [140404171542272] DEBUG - [FFMPEG] - Format mov,mp4,m4a,3gp,3g2,mj2 probed with size=2048 and score=100
+Mar 28, 2025 19:40:21.082 [140404171542272] DEBUG - [FFMPEG] - ISO: File Type Major Brand: mp42
+Mar 28, 2025 19:40:21.082 [140404171542272] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Mar 28, 2025 19:40:21.082 [140404171542272] DEBUG - [FFMPEG] - Processing st: 0, edit list 0 - media time: 2002, duration: 213200
+Mar 28, 2025 19:40:21.082 [140404171542272] DEBUG - [FFMPEG] - Offset DTS by 2002 to make first pts zero.
+Mar 28, 2025 19:40:21.082 [140404171542272] DEBUG - [FFMPEG] - Setting codecpar->delay to 2 for stream st: 0
+Mar 28, 2025 19:40:21.082 [140404171542272] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Mar 28, 2025 19:40:21.082 [140404171542272] DEBUG - [FFMPEG] - Processing st: 1, edit list 0 - media time: 0, duration: 343040
+Mar 28, 2025 19:40:21.082 [140404171542272] DEBUG - [FFMPEG] - Before avformat_find_stream_info() pos: 5443 bytes read:32768 seeks:0 nb_streams:2
+Mar 28, 2025 19:40:21.082 [140404171542272] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Mar 28, 2025 19:40:21.082 [140404171542272] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Mar 28, 2025 19:40:21.082 [140404171542272] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Mar 28, 2025 19:40:21.082 [140404171542272] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Mar 28, 2025 19:40:21.083 [140404171542272] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Mar 28, 2025 19:40:21.083 [140404171542272] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 3
+Mar 28, 2025 19:40:21.083 [140404171542272] DEBUG - [FFMPEG] - Format yuv420p chosen by get_format().
+Mar 28, 2025 19:40:21.083 [140404171542272] DEBUG - [FFMPEG] - no picture 
+Mar 28, 2025 19:40:21.087 [140404171542272] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Mar 28, 2025 19:40:21.087 [140404171542272] DEBUG - [FFMPEG] - no picture 
+Mar 28, 2025 19:40:21.087 [140404171542272] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Mar 28, 2025 19:40:21.087 [140404171542272] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Mar 28, 2025 19:40:21.088 [140404171542272] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Mar 28, 2025 19:40:21.088 [140404171542272] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Mar 28, 2025 19:40:21.088 [140404171542272] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Mar 28, 2025 19:40:21.089 [140404171542272] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Mar 28, 2025 19:40:21.089 [140404171542272] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Mar 28, 2025 19:40:21.089 [140404171542272] DEBUG - [FFMPEG] - All info found
+Mar 28, 2025 19:40:21.090 [140404171542272] DEBUG - [FFMPEG] - After avformat_find_stream_info() pos: 59103 bytes read:65536 seeks:0 frames:16
+Mar 28, 2025 19:40:21.090 [140404171542272] DEBUG - Creating /config/Library/Application Support/Plex Media Server/Media/localhost/3/19244d80898c853e8b5d49e3e3534981fe3c03e.bundle/Contents/Art/art1.jpg (50.0%, 1280x720).
+Mar 28, 2025 19:40:21.090 [140404171542272] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Mar 28, 2025 19:40:21.090 [140404171542272] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Mar 28, 2025 19:40:21.090 [140404171542272] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Mar 28, 2025 19:40:21.090 [140404171542272] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Mar 28, 2025 19:40:21.091 [140404171542272] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 3
+Mar 28, 2025 19:40:21.091 [140404171542272] DEBUG - [FFMPEG] - Format yuv420p chosen by get_format().
+Mar 28, 2025 19:40:21.091 [140404171542272] DEBUG - [FFMPEG] - no picture 
+Mar 28, 2025 19:40:21.095 [140404171542272] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Mar 28, 2025 19:40:21.095 [140404171542272] DEBUG - [FFMPEG] - no picture 
+Mar 28, 2025 19:40:21.096 [140404171542272] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Mar 28, 2025 19:40:21.104 [140404171542272] DEBUG - Loaded memory image of size 640x360.
+Mar 28, 2025 19:40:21.109 [140404171542272] DEBUG - [MI] Closing input file: "/media/Movies/14035-254146872_tiny.mp4"
+Mar 28, 2025 19:40:21.110 [140404171542272] DEBUG - Downloading document http://127.0.0.1:32400/library/changestamp
+Mar 28, 2025 19:40:21.110 [140404171542272] DEBUG - [HCl#3] HTTP requesting GET http://127.0.0.1:32400/library/changestamp
+Mar 28, 2025 19:40:21.111 [140404159326976] DEBUG - [HttpClient/HCl#3] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/library/changestamp (reused)
+Mar 28, 2025 19:40:21.111 [140404171542272] DEBUG - Updating metadata item (save) (14035 254146872 Tiny) with ID 2
+Mar 28, 2025 19:40:21.112 [140404159740672] DEBUG - [HCl#4] HTTP requesting GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=1&metadataItemID=2&metadataType=1&state=-1&parentID=-1&rootID=-1&mediaState=idle
+Mar 28, 2025 19:40:21.113 [140404159326976] DEBUG - [HttpClient/HCl#4] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/:/metadata/notify/changeItemState?librarySectionID=1&metadataItemID=2&metadataType=1&state=-1&parentID=-1&rootID=-1&mediaState=idle (reused)
+Mar 28, 2025 19:40:21.113 [140404171542272] DEBUG - Downloading document http://127.0.0.1:32400/library/changestamp
+Mar 28, 2025 19:40:21.113 [140404171542272] DEBUG - [HCl#5] HTTP requesting GET http://127.0.0.1:32400/library/changestamp
+Mar 28, 2025 19:40:21.114 [140404159326976] DEBUG - [HttpClient/HCl#5] HTTP/1.1 (0.0s) 200 response from GET http://127.0.0.1:32400/library/changestamp (reused)
+Mar 28, 2025 19:40:21.114 [140404171542272] DEBUG - Updating metadata item (save) (14035 254146872 Tiny) with ID 2

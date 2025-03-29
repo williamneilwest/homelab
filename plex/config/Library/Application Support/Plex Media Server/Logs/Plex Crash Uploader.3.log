@@ -1,0 +1,5 @@
+Mar 28, 2025 22:10:42.782 [140191086390072] INFO - Crash Uploader - Session Health - Status: exited StartTime: 1743221180 Duration: 262 UserId: williamneilwest@gmail.com Version: 1.41.5.9522-a96edc606
+Mar 28, 2025 22:10:42.782 [140191114303496] DEBUG - [HCl#1] HTTP requesting POST https://o17675.ingest.sentry.io/api/1233455/envelope/?sentry_key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Mar 28, 2025 22:10:42.935 [140191086144312] DEBUG - [HttpClient/HCl#1] HTTP/2.0 (0.2s) 200 response from POST https://o17675.ingest.sentry.io/api/1233455/envelope/?sentry_key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Mar 28, 2025 22:10:42.936 [140191114303496] INFO - Successfully reported session health
+Mar 28, 2025 22:10:42.936 [140191114303496] INFO - Crash Uploader - Processing Complete.

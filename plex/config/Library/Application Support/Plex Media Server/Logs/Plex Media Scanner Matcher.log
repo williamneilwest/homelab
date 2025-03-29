@@ -1,0 +1,41 @@
+Mar 28, 2025 19:40:21.341 [140054268234496] INFO - Plex Media Scanner v1.41.5.9522-a96edc606 - Docker Docker Container x86_64 - build: linux-x86_64 - GMT -06:00
+Mar 28, 2025 19:40:21.341 [140054268234496] INFO - Linux version: 6.1.0-32-amd64, language: en-US
+Mar 28, 2025 19:40:21.342 [140054268234496] INFO - Processor: 12-core AMD Ryzen 5 4600G with Radeon Graphics
+Mar 28, 2025 19:40:21.342 [140054268234496] INFO - /usr/lib/plexmediaserver/Plex Media Scanner --match --type 1 --log-file-suffix  Matcher --item 2
+Mar 28, 2025 19:40:21.341 [140054268735232] DEBUG - Opening 20 database sessions to library (com.plexapp.plugins.library), SQLite 3.39.4, threadsafe=1
+Mar 28, 2025 19:40:21.407 [140054268735232] DEBUG - Matcher: found 1 auxiliary files for 14035 254146872 Tiny
+Mar 28, 2025 19:40:21.407 [140054268735232] DEBUG - [MI] Opening input file: "/media/Movies/14035-254146872_tiny.mp4"
+Mar 28, 2025 19:40:21.407 [140054268735232] DEBUG - [FFMPEG] - Opening '/media/Movies/14035-254146872_tiny.mp4' for reading
+Mar 28, 2025 19:40:21.407 [140054268735232] DEBUG - [FFMPEG] - Setting default whitelist 'file,crypto,data'
+Mar 28, 2025 19:40:21.407 [140054268735232] DEBUG - [FFMPEG] - Format mov,mp4,m4a,3gp,3g2,mj2 probed with size=2048 and score=100
+Mar 28, 2025 19:40:21.407 [140054268735232] DEBUG - [FFMPEG] - ISO: File Type Major Brand: mp42
+Mar 28, 2025 19:40:21.407 [140054268735232] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Mar 28, 2025 19:40:21.408 [140054268735232] DEBUG - [FFMPEG] - Processing st: 0, edit list 0 - media time: 2002, duration: 213200
+Mar 28, 2025 19:40:21.408 [140054268735232] DEBUG - [FFMPEG] - Offset DTS by 2002 to make first pts zero.
+Mar 28, 2025 19:40:21.408 [140054268735232] DEBUG - [FFMPEG] - Setting codecpar->delay to 2 for stream st: 0
+Mar 28, 2025 19:40:21.408 [140054268735232] DEBUG - [FFMPEG] - Unknown dref type 0x206c7275 size 12
+Mar 28, 2025 19:40:21.408 [140054268735232] DEBUG - [FFMPEG] - Processing st: 1, edit list 0 - media time: 0, duration: 343040
+Mar 28, 2025 19:40:21.408 [140054268735232] DEBUG - [FFMPEG] - Before avformat_find_stream_info() pos: 5443 bytes read:32768 seeks:0 nb_streams:2
+Mar 28, 2025 19:40:21.408 [140054268735232] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Mar 28, 2025 19:40:21.408 [140054268735232] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Mar 28, 2025 19:40:21.408 [140054268735232] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Mar 28, 2025 19:40:21.408 [140054268735232] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Mar 28, 2025 19:40:21.409 [140054268735232] DEBUG - [FFMPEG] - nal_unit_type: 6(SEI), nal_ref_idc: 0
+Mar 28, 2025 19:40:21.409 [140054268735232] DEBUG - [FFMPEG] - nal_unit_type: 5(IDR), nal_ref_idc: 3
+Mar 28, 2025 19:40:21.409 [140054268735232] DEBUG - [FFMPEG] - Format yuv420p chosen by get_format().
+Mar 28, 2025 19:40:21.409 [140054268735232] DEBUG - [FFMPEG] - no picture 
+Mar 28, 2025 19:40:21.413 [140054268735232] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Mar 28, 2025 19:40:21.413 [140054268735232] DEBUG - [FFMPEG] - no picture 
+Mar 28, 2025 19:40:21.413 [140054268735232] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Mar 28, 2025 19:40:21.413 [140054268735232] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Mar 28, 2025 19:40:21.414 [140054268735232] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Mar 28, 2025 19:40:21.414 [140054268735232] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Mar 28, 2025 19:40:21.414 [140054268735232] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Mar 28, 2025 19:40:21.415 [140054268735232] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 0
+Mar 28, 2025 19:40:21.415 [140054268735232] DEBUG - [FFMPEG] - nal_unit_type: 1(Coded slice of a non-IDR picture), nal_ref_idc: 2
+Mar 28, 2025 19:40:21.415 [140054268735232] DEBUG - [FFMPEG] - All info found
+Mar 28, 2025 19:40:21.416 [140054268735232] DEBUG - [FFMPEG] - After avformat_find_stream_info() pos: 59103 bytes read:65536 seeks:0 frames:16
+Mar 28, 2025 19:40:21.416 [140054268735232] DEBUG - [FFMPEG] - nal_unit_type: 7(SPS), nal_ref_idc: 3
+Mar 28, 2025 19:40:21.416 [140054268735232] DEBUG - [FFMPEG] - nal_unit_type: 8(PPS), nal_ref_idc: 3
+Mar 28, 2025 19:40:21.417 [140054268735232] DEBUG - [MI] Closing input file: "/media/Movies/14035-254146872_tiny.mp4"
+Mar 28, 2025 19:40:21.417 [140054268735232] DEBUG - Matcher: no sidecar subtitle files found for /media/Movies/14035-254146872_tiny.mp4

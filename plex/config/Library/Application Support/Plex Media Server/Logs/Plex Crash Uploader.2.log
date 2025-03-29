@@ -1,0 +1,4 @@
+Mar 28, 2025 22:14:04.370 [140329367210808] INFO - Crash Uploader - Platform: Linux ServerUUID: c073436a724726c83bbaba99a80038a153ca2612 UserId: williamneilwest@gmail.com Version: 1.41.5.9522-a96edc606
+Mar 28, 2025 22:14:04.371 [140329367210808] INFO - Pre-processed minidump directory: /config/Library/Application Support/Plex Media Server/Crash Reports/1.41.5.9522-a96edc606
+Mar 28, 2025 22:14:04.371 [140329367210808] INFO - Post-processed minidump directory: /tmp
+Mar 28, 2025 22:14:04.371 [140329395124232] INFO - Crash Uploader - Processing Complete.

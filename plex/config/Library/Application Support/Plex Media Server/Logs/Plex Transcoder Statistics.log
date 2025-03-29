@@ -1,0 +1,36 @@
+<SessionReport version="2" startTime="0" startTimestamp="Mar 28, 2025 19:41:51.253" key="/library/metadata/2" session="6C7C4340-957B-4B74-8228-5462DF37FE93" transcode="53DB48FA-F388-4633-AD4C-E6B59BCE4955">
+<User id="1" thumb="https://plex.tv/users/3ce0fb2c0485b191/avatar?c=1743210462" title="williamwest407" />
+<Player address="107.115.44.97" device="iPhone" machineIdentifier="6C7C4340-957B-4B74-8228-5462DF37FE93" model="17,2" platform="iOS" platformVersion="18.1.1" product="Plex for iOS" remotePublicAddress="107.115.44.97" title="iPhone" vendor="Apple" version="8.45" local="0" relayed="0" secure="1" userID="1" />
+<Variants>
+<Variant id="4d9cd8a0-442e-4a02-88c1-f406cef45410" targetBitrate="712" context="streaming" sourceVideoCodec="h264" sourceAudioCodec="aac" videoDecision="transcode" audioDecision="transcode" protocol="hls" container="mkv" videoCodec="png" audioCodec="opus" audioChannels="2" transcodeHwRequested="0" transcodeHwFullPipeline="0">
+<Media audioProfile="lc" id="2" videoProfile="high" audioChannels="2" audioCodec="opus" bitrate="678" container="mkv" duration="7147" height="270" protocol="hls" videoCodec="png" videoFrameRate="NTSC" videoResolution="SD" width="480" selected="1">
+<Part audioProfile="lc" id="2" videoProfile="high" bitrate="678" container="mkv" duration="7147" height="270" protocol="hls" width="480" decision="transcode" selected="1">
+<Stream bitDepth="8" bitrate="553" codec="png" colorTrc="smpte170m" default="1" displayTitle="SD" extendedDisplayTitle="SD (H.264)" frameRate="29.969999313354492" height="270" id="2" streamType="1" width="480" decision="transcode" location="segments-av" />
+<Stream bitrate="125" bitrateMode="cbr" channels="2" codec="opus" default="1" displayTitle="Unknown (AAC Stereo)" extendedDisplayTitle="Unknown (AAC Stereo)" id="3" selected="1" streamType="2" decision="transcode" location="segments-av" />
+</Part>
+</Media>
+</Variant>
+</Variants>
+<SegmentList>
+<Segment duration="7107" startOffset="0" endOffset="7107">
+<File name="media-00000.ts" type="av">
+<FileVariant size="21700877" variant="4d9cd8a0-442e-4a02-88c1-f406cef45410" />
+</File>
+<Timelines>
+<Transcode startTime="1739" endTime="2069" complete="1" fileType="av" variant="4d9cd8a0-442e-4a02-88c1-f406cef45410" />
+<Download startTime="3031" endTime="8144" complete="1" fileType="av" variant="4d9cd8a0-442e-4a02-88c1-f406cef45410" />
+</Timelines>
+</Segment>
+</SegmentList>
+<PlaybackReports>
+<Playback startTime="4805" endTime="4961" state="buffering" progress="0" />
+<Playback startTime="4961" endTime="8785" state="playing" progress="0" />
+<Playback startTime="8785" endTime="8905" state="buffering" progress="4829" />
+<Playback startTime="8905" endTime="10882" state="playing" progress="4829" />
+<Playback startTime="10882" endTime="11298" state="buffering" progress="7054" />
+<Playback startTime="11298" endTime="11412" state="buffering" progress="0" />
+<Playback startTime="11412" state="stopped" progress="0" />
+</PlaybackReports>
+<StateReports />
+<StateReports />
+</SessionReport>
