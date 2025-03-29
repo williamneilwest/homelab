@@ -1,0 +1,106 @@
+user www-data;
+worker_processes auto;
+pid /run/nginx.pid;
+error_log /var/log/nginx/error.log;
+include /etc/nginx/modules-enabled/*.conf;
+
+events {
+	worker_connections 768;
+	# multi_accept on;
+}
+
+http {
+    # Enable Gzip compression (optional)
+    gzip on;
+    gzip_types text/plain text/css application/javascript image/x-icon;
+    gzip_min_length 1000;
+    gzip_proxied any;
+    gzip_disable "msie6";
+
+    # Include mime types for better handling of file extensions
+    include       /etc/nginx/mime.types;
+    default_type  application/octet-stream;
+
+    # Server block for HTTP traffic, redirect to HTTPS
+    server {
+    if ($host = pridebytes.io) {
+        return 301 https://$host$request_uri;
+    } # managed by Certbot
+
+
+        listen 80;
+        server_name pridebytes.io;  # Replace with your domain/subdomain
+
+        # Redirect all HTTP traffic to HTTPS
+        return 301 https://$host$request_uri;
+    
+
+}
+
+    # Server block for HTTPS traffic
+    server {
+        listen 443 ssl;
+        server_name pridebytes.io;  # Replace with your domain/subdomain
+
+        # SSL certificate and key (replace with actual file paths)
+    ssl_certificate /etc/letsencrypt/live/pridebytes.io-0001/fullchain.pem; # managed by Certbot
+  # Your SSL certificate
+    ssl_certificate_key /etc/letsencrypt/live/pridebytes.io-0001/privkey.pem; # managed by Certbot
+  # Your SSL private key
+
+        # SSL settings (recommended for better security)
+        ssl_protocols TLSv1.2 TLSv1.3;
+        ssl_ciphers 'TLS_AES_128_GCM_SHA256:TLS_AES_256_GCM_SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384';
+        ssl_prefer_server_ciphers off;
+        ssl_session_cache shared:SSL:10m;
+        ssl_session_timeout 1d;
+
+        # Proxy settings for the Homepage app running in Docker (on port 3000)
+        location / {
+            proxy_pass http://localhost:3000;  # Homepage container exposed on port 3000
+            proxy_set_header Host $host;
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+            proxy_set_header X-Forwarded-Proto $scheme;
+            proxy_redirect off;
+        }
+
+        # Optional: Handle 404 error
+        error_page 404 /404.html;
+        location = /404.html {
+            root /usr/share/nginx/html;
+            internal;
+        }
+
+        # Optional: Handle 500 error
+        error_page 500 502 503 504 /50x.html;
+        location = /50x.html {
+            root /usr/share/nginx/html;
+            internal;
+        }
+    
+}
+}
+
+
+
+#mail {
+#	# See sample authentication script at:
+#	# http://wiki.nginx.org/ImapAuthenticateWithApachePhpScript
+#
+#	# auth_http localhost/auth.php;
+#	# pop3_capabilities "TOP" "USER";
+#	# imap_capabilities "IMAP4rev1" "UIDPLUS";
+#
+#	server {
+#		listen     localhost:110;
+#		protocol   pop3;
+#		proxy      on;
+#	}
+#
+#	server {
+#		listen     localhost:143;
+#		protocol   imap;
+#		proxy      on;
+#	}
+#}
