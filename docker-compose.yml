@@ -3,7 +3,7 @@ services:
     image: ghcr.io/gethomepage/homepage:latest
     container_name: homepage
     volumes:
-      - /homelab/homepage/config:/app/config
+      - /opt/homelab/homepage/config:/app/config
     ports:
       - "3000:3000"
     environment:
