@@ -1,3 +1,2 @@
 Flask
-Flask-JWT-Extended
-Flask-CORS
+gunicorn

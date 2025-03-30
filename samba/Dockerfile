@@ -1,34 +1,24 @@
-# Use an official Node.js runtime as the base image for the frontend
-FROM node:16 AS frontend
-
-# Set the working directory for the frontends
-WORKDIR /app/frontend
-
-# Copy the frontend package and install dependencies
-COPY frontend/package.json frontend/package-lock.json ./
-RUN npm install
-
-# Copy the frontend code
-COPY frontend/ ./
-
-# Build the React app
-RUN npm run build
-
-# Now, for the Flask backend, use Python
-FROM python:3.9 AS backend
+# Use a Python image for the backend
+FROM python:3.9
 
 # Set the working directory for the backend
 WORKDIR /app/backend
 
-# Copy the backend requirements and install dependencies
+# Copy requirements.txt and install Flask
 COPY backend/requirements.txt ./
-RUN pip install -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy the backend code
-COPY backend/ ./
+# Copy the Flask application code into the container
+COPY backend .
 
-# Expose the necessary ports
-EXPOSE 80
+# Copy the built Vite files from the host into the container
+COPY ./frontend/dist ./frontend
 
-# Set the default command to run both the Flask app and the React app
-CMD ["sh", "-c", "flask run --host=0.0.0.0 & serve -s /app/frontend/dist -l 80"]
+# Set the environment variables for Flask
+ENV FLASK_APP=app.py
+ENV FLASK_ENV=production
+
+# Expose the necessary port for Flask
+EXPOSE 5000
+
+CMD ["flask", "run", "--host=0.0.0.0", "--port=8445"]

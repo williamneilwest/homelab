@@ -13,6 +13,16 @@ services:
         ipv4_address: 172.18.0.3  # Unique IP for Homepage
     restart: always
 
+  sysinfo:
+    build: ./homepage/sysinfo
+    container_name: sysinfo
+    ports:
+      - "5005:5005"
+    networks:
+      homelab-network:
+        ipv4_address: 172.18.0.7  # Unique IP for Homepage
+    restart: always
+
   plex:
     image: plexinc/pms-docker:latest
     container_name: plex
@@ -29,15 +39,19 @@ services:
         ipv4_address: 172.18.0.4  # Unique IP for Plex
     restart: always
 
-  ssh-gui:
-    image: linuxserver/openssh-server
-    container_name: ssh-gui
+  samba:
+    build:
+      context: ./samba
+    container_name: samba
     ports:
-      - "3001:3001"
+      - "8445:8445"
+    volumes:
+      - ./samba/backend:/app/backend  # Optional: bind mount for live development
+      - ./samba/frontend/dist:/app/backend/frontend
     networks:
       homelab-network:
-        ipv4_address: 172.18.0.5  # Unique IP for SSH GUI
-    restart: always
+        ipv4_address: 172.18.0.5
+    restart: unless-stopped
     
   splash:
     build:
