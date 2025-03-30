@@ -18,6 +18,12 @@ services:
     container_name: plex
     ports:
       - "32400:32400"
+    volumes:
+      - /homelab/plex/config:/config
+      - /opt/homelab/plex/data/Movies:/movies
+    environment:
+      - PLEX_CLAIM=claim-dr9vNG7xsy3Rhfh9SQ3C
+      - TZ=America/Denver    
     networks:
       homelab-network:
         ipv4_address: 172.18.0.4  # Unique IP for Plex
@@ -32,6 +38,21 @@ services:
       homelab-network:
         ipv4_address: 172.18.0.5  # Unique IP for SSH GUI
     restart: always
+    
+  splash:
+    build:
+      context: ./splash  # Path to your Dockerfile (where both frontend and backend code reside)
+    container_name: splash
+    ports:
+      - "5000:5000"  # API port for Flask
+    volumes:
+      - ./splash/backend:/app/backend  # Optional: bind mount for live development
+      - ./splash/frontend/dist:/app/backend/frontend
+    networks:
+      homelab-network:
+        ipv4_address: 172.18.0.6
+    restart: always 
+    
 
 networks:
   homelab-network:
