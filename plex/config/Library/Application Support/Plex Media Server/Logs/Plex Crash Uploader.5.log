@@ -1,5 +1,4 @@
-Mar 28, 2025 22:05:42.322 [140208649087800] INFO - Crash Uploader - Session Health - Status: exited StartTime: 1743220881 Duration: 261 UserId: williamneilwest@gmail.com Version: 1.41.5.9522-a96edc606
-Mar 28, 2025 22:05:42.322 [140208677001224] DEBUG - [HCl#1] HTTP requesting POST https://o17675.ingest.sentry.io/api/1233455/envelope/?sentry_key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Mar 28, 2025 22:05:42.467 [140208648842040] DEBUG - [HttpClient/HCl#1] HTTP/2.0 (0.1s) 200 response from POST https://o17675.ingest.sentry.io/api/1233455/envelope/?sentry_key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Mar 28, 2025 22:05:42.467 [140208677001224] INFO - Successfully reported session health
-Mar 28, 2025 22:05:42.467 [140208677001224] INFO - Crash Uploader - Processing Complete.
+Mar 29, 2025 11:26:51.997 [140080386652984] INFO - Crash Uploader - Platform: Linux ServerUUID: c073436a724726c83bbaba99a80038a153ca2612 UserId: williamneilwest@gmail.com Version: 1.41.5.9522-a96edc606
+Mar 29, 2025 11:26:51.998 [140080386652984] INFO - Pre-processed minidump directory: /config/Library/Application Support/Plex Media Server/Crash Reports/1.41.5.9522-a96edc606
+Mar 29, 2025 11:26:51.998 [140080386652984] INFO - Post-processed minidump directory: /tmp
+Mar 29, 2025 11:26:51.998 [140080414566408] INFO - Crash Uploader - Processing Complete.

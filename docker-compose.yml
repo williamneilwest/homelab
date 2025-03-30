@@ -2,34 +2,36 @@ services:
   homepage:
     image: ghcr.io/gethomepage/homepage:latest
     container_name: homepage
+    volumes:
+      - /homelab/homepage/config:/app/config
     ports:
       - "3000:3000"
-    restart: always
-    volumes:
-      - ./homepage/config:/app/config
+    environment:
+      - HOMEPAGE_ALLOWED_HOSTS=homepage.pridebytes.io
     networks:
       homelab-network:
-        ipv4_address: 172.18.0.3
-    environment:
-      HOMEPAGE_ALLOWED_HOSTS: "homepage.pridebytes.io"
-      PUID: ${PUID}
-      PGID: ${PGID}
+        ipv4_address: 172.18.0.3  # Unique IP for Homepage
+    restart: always
 
   plex:
     image: plexinc/pms-docker:latest
     container_name: plex
     ports:
       - "32400:32400"
-    restart: always
     networks:
       homelab-network:
-        ipv4_address: 172.18.0.2
-    environment:
-      - TZ=America/Denver  # Set your timezone
-    volumes:
-      - ./plex/config:/config
-      - ./plex/data:/data
-      - ./plex/media:/media
+        ipv4_address: 172.18.0.4  # Unique IP for Plex
+    restart: always
+
+  ssh-gui:
+    image: linuxserver/openssh-server
+    container_name: ssh-gui
+    ports:
+      - "3001:3001"
+    networks:
+      homelab-network:
+        ipv4_address: 172.18.0.5  # Unique IP for SSH GUI
+    restart: always
 
 networks:
   homelab-network:
